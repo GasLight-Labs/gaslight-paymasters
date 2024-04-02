@@ -4,7 +4,7 @@
   "scripts": {
     "test": "hardhat test",
     "compile": "hardhat compile",
-    "deploy": "hardhat run --network polygonMumbai scripts/deploy.ts",
+    "deploy": "hardhat run --network arbitrumOne scripts/deploy.ts",
     "deploy:ignition": "hardhat ignition deploy ignition/modules/VerifyingPaymaster.ts --network arbitrum --deployment-id arbitrum --verify --parameters ignition/parameters.json"
   },
   "devDependencies": {
@@ -34,6 +34,8 @@
     "typescipt": "^1.0.0"
   }
 }
+
+
 
 
 
