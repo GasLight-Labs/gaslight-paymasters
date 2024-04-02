@@ -1,12 +1,41 @@
 {
   "name": "gaslight-paymasters",
   "license": "MIT",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy:ignition": "hardhat ignition deploy ignition/modules/Lock.ts --network polygonMumbai --deployment-id polygonMumbai --verify --parameters ignition/parameters.json"
+  },
   "devDependencies": {
     "@account-abstraction/contracts": "^0.6.0",
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomicfoundation/hardhat-viem": "^2.0.0",
     "@openzeppelin/contracts": "4.8.3",
+    "@types/chai": "^4.2.0",
+    "@types/chai-as-promised": "^7.1.6",
+    "@types/mocha": ">=9.1.0",
     "account-abstraction": "^0.2.4",
-    "hardhat": "^2.22.2"
+    "chai": "^4.2.0",
+    "hardhat": "^2.22.2",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.1",
+    "typescript": "^5.4.3",
+    "viem": "^2.9.6"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.1.1",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescipt": "^1.0.0"
+  }
 }
+
+
+
+
+
+
