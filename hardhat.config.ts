@@ -28,7 +28,7 @@ const config: HardhatUserConfig = {
       mainnet: process.env.ETHERSCAN_API_KEY || "",
       polygon: process.env.POLYGONSCAN_API_KEY || "TTJKDGPV1AY4H52N6HECABFZ8WDUGXD5G2",
       polygonMumbai: process.env.POLYGONSCAN_API_KEY || "TTJKDGPV1AY4H52N6HECABFZ8WDUGXD5G2",
-      arbitrumOne: process.env.ARBISCAN_API_KEY || "",
+      arbitrum: process.env.ARBISCAN_API_KEY || "CRCAJ2S1H44DDPQBCM2YBTU4SPD8IZABQD",
     },
   },
   networks: {
@@ -49,7 +49,7 @@ const config: HardhatUserConfig = {
       url: process.env.POLYGON_MUMBAI_RPC,
       accounts,
     },
-    arbitrumOne: {
+    arbitrum: {
       url: process.env.ARBITRUM_ONE_RPC,
       accounts,
     },
@@ -57,8 +57,5 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
-
-
-
 
 
