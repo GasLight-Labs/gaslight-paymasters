@@ -1,7 +1,12 @@
 {
-  "name": "hardhat-project",
+  "name": "gaslight-paymasters",
+  "license": "MIT",
   "devDependencies": {
+    "@account-abstraction/contracts": "^0.6.0",
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@openzeppelin/contracts": "4.8.3",
+    "account-abstraction": "^0.2.4",
     "hardhat": "^2.22.2"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
