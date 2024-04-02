@@ -1,4 +1,5 @@
 import { HardhatUserConfig } from "hardhat/config";
+import "@nomicfoundation/hardhat-viem";
 import "@nomicfoundation/hardhat-toolbox-viem";
 import "@nomicfoundation/hardhat-ignition-viem";
 import { config as dotenvConfig } from "dotenv";
@@ -56,6 +57,7 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
+
 
 
 

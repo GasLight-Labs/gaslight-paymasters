@@ -4,7 +4,7 @@
   "scripts": {
     "test": "hardhat test",
     "compile": "hardhat compile",
-    "deploy:ignition": "hardhat ignition deploy ignition/modules/Lock.ts --network polygonMumbai --deployment-id polygonMumbai --verify --parameters ignition/parameters.json"
+    "deploy:ignition": "hardhat ignition deploy ignition/modules/VerifyingPaymaster.ts --network polygonMumbai --deployment-id polygonMumbai --verify --parameters ignition/parameters.json"
   },
   "devDependencies": {
     "@account-abstraction/contracts": "^0.6.0",
@@ -33,6 +33,8 @@
     "typescipt": "^1.0.0"
   }
 }
+
+
 
 
 
