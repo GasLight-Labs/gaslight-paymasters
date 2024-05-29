@@ -21,6 +21,15 @@ const config: HardhatUserConfig = {
           },
         },
       },
+      {
+        version: "0.8.23",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
     ],
   },
   etherscan: {
@@ -60,5 +69,6 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
+
 
 

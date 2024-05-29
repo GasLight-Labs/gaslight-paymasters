@@ -5,10 +5,13 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@account-abstraction/contracts@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "@account-abstraction/contracts@npm:0.6.0"
-  checksum: 10c0/2689f7ad42852f2917b642252880b4b9697123a4d22ce0ab0596562a751e5be776a6891ac4cf66d784b156a5f6d162cd240a0dfe00cdca6a9b7dcd4da18ef062
+"@account-abstraction/contracts@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@account-abstraction/contracts@npm:0.7.0"
+  dependencies:
+    "@openzeppelin/contracts": "npm:^5.0.0"
+    "@uniswap/v3-periphery": "npm:^1.4.3"
+  checksum: 10c0/3b93c2b3972993aebec5013d7e3c99b044a8c40be4eaa88faeb12739ce4ffff81f5776f982772d080ca783be1b0b7d8cd0742293679ad043eb0e118706d076f4
   languageName: node
   linkType: hard
 
@@ -1003,10 +1006,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openzeppelin/contracts@npm:4.8.3":
-  version: 4.8.3
-  resolution: "@openzeppelin/contracts@npm:4.8.3"
-  checksum: 10c0/1f80772c4e5b4f495ad0863663d5e1fd5315aec8b3886371f610dab41e96c3699eff631c66eedbc1f47a3df3010c17fa9ce217d9350e5ef070232c6386a7a40d
+"@openzeppelin/contracts@npm:3.4.2-solc-0.7":
+  version: 3.4.2-solc-0.7
+  resolution: "@openzeppelin/contracts@npm:3.4.2-solc-0.7"
+  checksum: 10c0/223ea623c6d736b19afd033905976175503adb0f9bd667eaa290f95c6bce591df1d48c1f60cb0472b61cde347f2be32bf7dabf599cd7de19a0a07177d9bf22e5
+  languageName: node
+  linkType: hard
+
+"@openzeppelin/contracts@npm:^5.0.0, @openzeppelin/contracts@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "@openzeppelin/contracts@npm:5.0.2"
+  checksum: 10c0/d042661db7bb2f3a4b9ef30bba332e86ac20907d171f2ebfccdc9255cc69b62786fead8d6904b8148a8f26946bc7c15eead91b95f75db0c193a99d52e528663e
   languageName: node
   linkType: hard
 
@@ -1351,6 +1361,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@uniswap/lib@npm:^4.0.1-alpha":
+  version: 4.0.1-alpha
+  resolution: "@uniswap/lib@npm:4.0.1-alpha"
+  checksum: 10c0/9f39a0176b752292dce7aaace56448218a5aac36ee494bc56ad11e3dc6cfc8fba54339e0223f60093ed277b1661b746bd3d32189896b88a0dcb13f7a9c98d213
+  languageName: node
+  linkType: hard
+
+"@uniswap/v2-core@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@uniswap/v2-core@npm:1.0.1"
+  checksum: 10c0/61fc8beb5f2875fc3fe6b00043c9491f0eb9839b824af44d53a303f3df1970c6c3e8a555b7a0150e0ad75b8e49ad6e3cf7d923109da31884536a7a844c24cda0
+  languageName: node
+  linkType: hard
+
+"@uniswap/v3-core@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "@uniswap/v3-core@npm:1.0.1"
+  checksum: 10c0/16305a290c1e595cf1ed2c23eb841e6df25e15ccc32043fc104c61b4ec6fbf88e0cef666da0ca70af0ad3bfd75afa52f9acd96f4018066b23d7857c5ffdc2898
+  languageName: node
+  linkType: hard
+
+"@uniswap/v3-periphery@npm:^1.4.3":
+  version: 1.4.4
+  resolution: "@uniswap/v3-periphery@npm:1.4.4"
+  dependencies:
+    "@openzeppelin/contracts": "npm:3.4.2-solc-0.7"
+    "@uniswap/lib": "npm:^4.0.1-alpha"
+    "@uniswap/v2-core": "npm:^1.0.1"
+    "@uniswap/v3-core": "npm:^1.0.0"
+    base64-sol: "npm:1.0.1"
+  checksum: 10c0/a3487917c4ca767b3bd77a1717937515d72167517e1189275dce5f91003ed566d99260bfec8b25c84a8c9b2dd09d64c0924aa23c7162aaf27266dbf348bcff1e
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -1686,6 +1730,13 @@ __metadata:
   dependencies:
     safe-buffer: "npm:^5.0.1"
   checksum: 10c0/e6bbeae30b24f748b546005affb710c5fbc8b11a83f6cd0ca999bd1ab7ad3a22e42888addc40cd145adc4edfe62fcfab4ebc91da22e4259aae441f95a77aee1a
+  languageName: node
+  linkType: hard
+
+"base64-sol@npm:1.0.1":
+  version: 1.0.1
+  resolution: "base64-sol@npm:1.0.1"
+  checksum: 10c0/30e558f3de94f1935231d773b4f07cf79004ba528570269fbca31034259f32619b3798eb07c5a206b20a7f0ede55c9464243a25b248ac7148f67d5e49d98c5be
   languageName: node
   linkType: hard
 
@@ -2948,14 +2999,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "gaslight-paymasters@workspace:."
   dependencies:
-    "@account-abstraction/contracts": "npm:^0.6.0"
+    "@account-abstraction/contracts": "npm:^0.7.0"
     "@nomicfoundation/hardhat-ignition": "npm:^0.15.0"
     "@nomicfoundation/hardhat-ignition-viem": "npm:^0.15.0"
     "@nomicfoundation/hardhat-network-helpers": "npm:^1.0.0"
     "@nomicfoundation/hardhat-toolbox-viem": "npm:^3.0.0"
     "@nomicfoundation/hardhat-verify": "npm:^2.0.0"
     "@nomicfoundation/hardhat-viem": "npm:^2.0.0"
-    "@openzeppelin/contracts": "npm:4.8.3"
+    "@openzeppelin/contracts": "npm:^5.0.2"
     "@types/chai": "npm:^4.2.0"
     "@types/chai-as-promised": "npm:^7.1.6"
     "@types/mocha": "npm:>=9.1.0"

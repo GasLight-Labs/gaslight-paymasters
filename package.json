@@ -8,14 +8,14 @@
     "deploy:ignition": "hardhat ignition deploy ignition/modules/VerifyingPaymaster.ts --network arbitrum --deployment-id arbitrum --verify --parameters ignition/parameters.json"
   },
   "devDependencies": {
-    "@account-abstraction/contracts": "^0.6.0",
+    "@account-abstraction/contracts": "^0.7.0",
     "@nomicfoundation/hardhat-ignition": "^0.15.0",
     "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
     "@nomicfoundation/hardhat-verify": "^2.0.0",
     "@nomicfoundation/hardhat-viem": "^2.0.0",
-    "@openzeppelin/contracts": "4.8.3",
+    "@openzeppelin/contracts": "^5.0.2",
     "@types/chai": "^4.2.0",
     "@types/chai-as-promised": "^7.1.6",
     "@types/mocha": ">=9.1.0",
@@ -34,16 +34,3 @@
     "typescipt": "^1.0.0"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
