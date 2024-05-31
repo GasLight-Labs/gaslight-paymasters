@@ -342,10 +342,11 @@ contract UniversalPaymaster is BasePaymaster {
   function _parsePaymasterAndData(
     bytes calldata _paymasterAndData
   ) internal pure returns (uint8 mode, uint48 validUntil, uint48 validAfter, bytes calldata signature) {
-    if (_paymasterAndData.length < 21) {
+    if (_paymasterAndData.length < 53) {
       mode = 0;
       signature = msg.data[0:0];
     } else {
+      mode = 1;
       (validUntil, validAfter) = abi.decode(_paymasterAndData[VALID_TIMESTAMP_OFFSET:], (uint48, uint48));
       signature = _paymasterAndData[SIGNATURE_OFFSET:];
     }
