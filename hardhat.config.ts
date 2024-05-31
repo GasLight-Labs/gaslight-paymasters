@@ -41,7 +41,7 @@ const config: HardhatUserConfig = {
     },
   },
   sourcify: {
-    enabled: true,
+    enabled: false,
   },
   networks: {
     hardhat: {
@@ -69,6 +69,7 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
+
 
 
 
